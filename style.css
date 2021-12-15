@@ -200,7 +200,7 @@ body {
     .menu {
         order: 1;
         align-items: flex-end;
-        margin-left: 30%;
+        margin-left: 20%;
         flex: 1 1 70%;
     }
     .menu__list {
@@ -543,15 +543,11 @@ body {
     .order__form--contact {
         margin-left: 32vw;
     }
-    .page {
+    .contact,
+    .page,
+    .product__all {
         margin-top: 0;
     }
-    .contact {
-        margin-top: 0;
-    }
-
-
-
 
 
     /***********FOOTER******************/
