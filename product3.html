@@ -1,145 +1,72 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>OGleather</title>
+---
+layout: sablona.njk
+title: Produkt3
+---
 
-	<!-- Google Fonts: Raleway 400, Open Sans 400(i)/700(i) -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway&display=swap" rel="stylesheet">
-	
-	<link rel="stylesheet" href="style.css">
-</head>
+<div class="page">
 
-<body>
-    <header class="header">
-            
-        <div class="header__inner">
-            <img class="header__logo" src="images/logo.png" alt="logo OGleather">
-        </div>
+    <div class="sp-loading"><img src="/images/sp-loading.gif" alt=""><br>LOADING IMAGES</div>
+    <div class="sp-wrap">
+        <a href="/images/cut/galerie21.jpg"><img src="/images/min/21.jpg" alt=""></a>
+        <a href="/images/cut/galerie22.jpg"><img src="/images/min/22.jpg" alt=""></a>
+        <a href="/images/cut/galerie23.jpg"><img src="/images/min/23.jpg" alt=""></a>
+        <a href="/images/cut/galerie10.jpg"><img src="/images/min/10.jpg" alt=""></a>
+        <a href="/images/cut/galerie20.jpg"><img src="/images/min/20.jpg" alt=""></a>
+        <a href="/images/cut/galerie02.jpg"><img src="/images/min/02.jpg" alt=""></a>
+        <a href="/images/cut/galerie19.jpg"><img src="/images/min/19.jpg" alt=""></a>
+        <a href="/images/cut/galerie20.jpg"><img src="/images/min/20.jpg" alt=""></a>
+        <a href="/images/cut/galerie17.jpg"><img src="/images/min/17.jpg" alt=""></a>
+        <a href="/images/cut/galerie24.jpg"><img src="/images/min/24.jpg" alt=""></a>
+    </div>
 
-        <nav class="menu">
-
-            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-            <label for="menu-checkbox" class="menu__toggler">☰</label>
-    
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="#">PRODUKTY</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">OBJEDNAT</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">JAK ZMĚŘIT</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">GALERIE</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">KONTAKT</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">O MNĚ</a></li>
-            </ul>
-    
-        </nav>
-
-    </header>
-
-	<main class="main">
-        <hr>
-        <div class="page">
-
-            <div class="sp-loading"><img src="images/sp-loading.gif" alt=""><br>LOADING IMAGES</div>
-            <div class="sp-wrap">
-                <a href="images/cut/galerie21.jpg"><img src="images/min/21.jpg" alt=""></a>
-                <a href="images/cut/galerie22.jpg"><img src="images/min/22.jpg" alt=""></a>
-                <a href="images/cut/galerie23.jpg"><img src="images/min/23.jpg" alt=""></a>
-                <a href="images/cut/galerie10.jpg"><img src="images/min/10.jpg" alt=""></a>
-                <a href="images/cut/galerie20.jpg"><img src="images/min/20.jpg" alt=""></a>
-                <a href="images/cut/galerie02.jpg"><img src="images/min/02.jpg" alt=""></a>
-                <a href="images/cut/galerie19.jpg"><img src="images/min/19.jpg" alt=""></a>
-                <a href="images/cut/galerie20.jpg"><img src="images/min/20.jpg" alt=""></a>
-                <a href="images/cut/galerie17.jpg"><img src="images/min/17.jpg" alt=""></a>
-                <a href="images/cut/galerie24.jpg"><img src="images/min/24.jpg" alt=""></a>
-            </div>
-
-            <div class="product__description">
-                <h2 class="product__description--title">KOŽENÝ PÁSEK S NÁRAMKEM</h2>
-                <h3 class="product__description--subtitle">Černý / hnědý / béžový</h3>
-                <h2>1 890 Kč</h2>
-                <p> Každá položka v obchodě se vyrábí v malé české dílně. Nákupem v našem obchodě podpoříte skutečný český malý podnik. 
-                    Naši výrobu nezadáváme a jsme hrdí na to, že jsme známí svou poctivou kvalitou.</p>
-                
-                <label for="product__name__choise">Barva pásků *</label>
-                <select name="product__name__choise" id="product__name__choise" autofocus required>
-                    <option value="bezova">Přírodní kůže</option>
-                    <option value="cerna">Černá</option>
-                    <option value="hneda">Hnědá</option>
-                    <option selected>Vyberte</option>
-                </select>
-
-                <label for="product__name__choise">Šířka pásků *</label>
-                <select name="product__name__choise" id="product__width__choise" autofocus required>
-                    <option value="2.5">Šířka 2.5cm</option>
-                    <option value="3.0">Šířka 3.0cm</option>
-                    <option value="3.5">Šířka 3.5cm</option>
-                    <option value="4.0">Šířka 4.0cm</option>
-                    <option selected>Šířka pásků</option>
-                </select>
-
-                <label for="product__name__choise">Délka pásků *</label>
-                <input type="text" name="name" id="product__length"  size="50" autofocus required> 
-
-                <label for="monogram">Monogram * <span class="zprava">Správný tvar iniciálu je X. Y. </span></label>
-                <textarea name="monogram" id="zprava"  size="20" autofocus required cols="2" rows="1"> </textarea>
-              
-            </div>
-
-            <div class="order__form--contact">
-
-                <label for="name">Jméno a příjmení *</label>
-                <input type="text" name="name" id="name"  size="50" autofocus required> 
-            
-                <label for="email">E-mail *</label>
-                <input type="email" name="email" id="email"  size="50" autofocus required> 
-            
-                <label for="telefon">Telefon *</label>
-                <input type="tel" name="telefon" id="telefon"  size="50" autofocus required> 
+    <div class="product__description">
+        <h2 class="product__description--title">KOŽENÝ PÁSEK S NÁRAMKEM</h2>
+        <h3 class="product__description--subtitle">Černý / hnědý / béžový</h3>
+        <h2>1 890 Kč</h2>
+        <p> Každá položka v obchodě se vyrábí v malé české dílně. Nákupem v našem obchodě podpoříte skutečný český malý podnik. 
+            Naši výrobu nezadáváme a jsme hrdí na to, že jsme známí svou poctivou kvalitou.</p>
         
-                <label for="address">Adresa *</label>
-                <textarea name="address" id="address"  size="30" autofocus required cols="10" rows="3"> </textarea>
-           
-            </div>
-            <button class="button" type="submit">Odeslat</button>
-        </div>
+        <label for="product__name__choise">Barva pásků *</label>
+        <select name="product__name__choise" id="product__name__choise" autofocus required>
+            <option value="bezova">Přírodní kůže</option>
+            <option value="cerna">Černá</option>
+            <option value="hneda">Hnědá</option>
+            <option selected>Vyberte</option>
+        </select>
 
-         <hr>
-    </main>
+        <label for="product__name__choise">Šířka pásků *</label>
+        <select name="product__name__choise" id="product__width__choise" autofocus required>
+            <option value="2.5">Šířka 2.5cm</option>
+            <option value="3.0">Šířka 3.0cm</option>
+            <option value="3.5">Šířka 3.5cm</option>
+            <option value="4.0">Šířka 4.0cm</option>
+            <option selected>Šířka pásků</option>
+        </select>
 
+        <label for="product__name__choise">Délka pásků *</label>
+        <input type="text" name="name" id="product__length"  size="50" autofocus required> 
 
-    <footer class="footer">
+        <label for="monogram">Monogram * <span class="zprava">Správný tvar iniciálu je X. Y. </span></label>
+        <textarea name="monogram" id="zprava"  size="20" autofocus required cols="2" rows="1"> </textarea>
+        
+    </div>
 
-        <div class="footer__grid--column">
-            <div>
-                <a class="footer__link" href="#"><h2>KONTAKT</h2></a>
-            </div>
-            <div>
-                <span class="footer__title">Telefon:</span><br>
-                +420 123 456 789
-            </div>
-            <div>
-                <span class="footer__title">E-mail:</span><br>
-                <a class="footer__email" href="mailto:order@ogleather.cz">order@ogleather.cz</a>
-            </div>
-            <div class="footer__copyright">
-                &copy;2021, TP
-            </div>
+    <div class="order__form--contact">
 
-        </div>
+        <label for="name">Jméno a příjmení *</label>
+        <input type="text" name="name" id="name"  size="50" autofocus required> 
+    
+        <label for="email">E-mail *</label>
+        <input type="email" name="email" id="email"  size="50" autofocus required> 
+    
+        <label for="telefon">Telefon *</label>
+        <input type="tel" name="telefon" id="telefon"  size="50" autofocus required> 
 
-    </footer>
+        <label for="address">Adresa *</label>
+        <textarea name="address" id="address"  size="30" autofocus required cols="10" rows="3"> </textarea>
+    
+    </div>
+    <button class="button" type="submit">Odeslat</button>
+</div>
 
-    <!-- JS ======================================================= -->
-    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="js/smoothproducts.min.js"></script>
-    <script type="text/javascript">
-    /* wait for images to load */
-    $(window).load(function() {
-        $('.sp-wrap').smoothproducts();
-    });
-    </script>
-
-</body>
-</html>
+    <hr>

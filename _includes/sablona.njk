@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OGleather</title>
+
+	<!-- Google Fonts: Raleway 400, Open Sans 400(i)/700(i) -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	
+    <header class="header">
+            
+        <div class="header__inner">
+            <img class="header__logo" src="/images/logo.png" alt="logo OGleather">
+        </div>
+
+        <nav class="menu">
+
+            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu__toggler">☰</label>
+    
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/produkty/">PRODUKTY</a></li>
+                <li class="menu__item"><a class="menu__link" href="/product1/">OBJEDNAT</a></li>
+                <li class="menu__item"><a class="menu__link" href="/measure/">JAK ZMĚŘIT</a></li>
+                <li class="menu__item"><a class="menu__link" href="/galerie/">GALERIE</a></li>
+                <li class="menu__item"><a class="menu__link" href="/kontakt/">KONTAKT</a></li>
+            </ul>
+    
+        </nav>
+
+
+    </header>
+
+    <main class="main">
+        <hr>
+
+        {{ content | safe }}
+
+        
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__grid--column">
+            <div>
+                <a class="footer__link" href="/kontakt/"><h2>KONTAKT</h2></a>
+            </div>
+            <div>
+                <span class="footer__title">Telefon:</span><br>
+                +420 123 456 789
+            </div>
+            <div>
+                <span class="footer__title">E-mail:</span><br>
+                <a class="footer__email" href="mailto:order@ogleather.cz">order@ogleather.cz</a>
+            </div>
+            <div class="footer__copyright">
+                &copy;2021, TP
+            </div>
+
+        </div>
+
+    </footer>
+
+        <!-- JS ======================================================= -->
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/smoothproducts.min.js"></script>
+    <script type="text/javascript">
+    /* wait for images to load */
+    $(window).load(function() {
+        $('.sp-wrap').smoothproducts();
+    });
+    </script>
+
+</body>
+</html>

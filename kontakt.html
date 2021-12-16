@@ -1,117 +1,55 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>OGleather</title>
+---
+layout: sablona.njk
+title: Kontakt
+---
 
-	<!-- Google Fonts: Raleway 400, Open Sans 400(i)/700(i) -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway&display=swap" rel="stylesheet">
-	
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	
-    <header class="header">
-            
-        <div class="header__inner">
-            <img class="header__logo" src="images/logo.png" alt="logo OGleather">
+<section class="contact">
+
+    <div class="contact__grid">
+        <div class="contact__grid--item">
+            <h1 class="contact__name">Kontakt</h1>
+
+            <p>Máte-li jakýkoli dotaz ohledně vaší objednavky, neváhejte kontaktovat nas. Využít můžete buď kontaktní formulář tady na stránce nebo nám zavolejte nebo napište email.</p>
+
+            <p class="contact__contact">
+                <strong>Telefon:</strong> +420 123 456 789<br>
+                <strong>E-mail:</strong> <a href="mailto:order@ogleather.cz">order@ogleather.cz</a>
+            </p>
         </div>
 
-        <nav class="menu">
+        <div class="contact__grid--item">
 
-            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-            <label for="menu-checkbox" class="menu__toggler">☰</label>
-    
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="#product">PRODUKTY</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">OBJEDNAT</a></li>
-                <li class="menu__item"><a class="menu__link" href="#measure">JAK ZMĚŘIT</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">GALERIE</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">KONTAKT</a></li>
-            </ul>
-    
-        </nav>
+            <h2 class="contact__form">Kontaktní formulář</h2>
 
+            <form action="" method="post">
 
-    </header>
-
-    <main class="main">
-        <hr>
-
-        <section class="contact">
-
-            <div class="contact__grid">
-                <div class="contact__grid--item">
-                    <h1 class="contact__name">Kontakt</h1>
-
-                    <p>Máte-li jakýkoli dotaz ohledně vaší objednavky, neváhejte kontaktovat nas. Využít můžete buď kontaktní formulář tady na stránce nebo nám zavolejte nebo napište email.</p>
-
-                    <p class="contact__contact">
-                        <strong>Telefon:</strong> +420 123 456 789<br>
-                        <strong>E-mail:</strong> <a href="ailto:order@ogleather.cz">order@ogleather.cz</a>
-                    </p>
+                <div class="form-field">
+                    <label for="jmeno" class="required">Jméno a příjmení *</label>
+                    <input type="text" name="jmeno" id="jmeno" required>
                 </div>
 
-                <div class="contact__grid--item">
-
-                    <h2 class="contact__form">Kontaktní formulář</h2>
-
-                    <form action="" method="post">
-
-                        <div class="form-field">
-                            <label for="jmeno" class="required">Jméno a příjmení *</label>
-                            <input type="text" name="jmeno" id="jmeno" required>
-                        </div>
-
-                        <div class="form-field">
-                            <label for="email" class="required">E-mail *</label>
-                            <input type="email" name="email" id="email" required>
-                        </div>
-
-                        <div class="form-field">
-                            <label for="telefon">Telefon</label>
-                            <input type="tel" name="telefon" id="telefon">
-                        </div>
-
-                        <div class="form-field">
-                            <label for="zprava" class="required">Zpráva *</label>
-                            <textarea name="zprava" id="zprava" rows="6" required></textarea>
-                        </div>
-
-                        <button class="button" type="submit">Odeslat</button>
-
-                    </form>
-
+                <div class="form-field">
+                    <label for="email" class="required">E-mail *</label>
+                    <input type="email" name="email" id="email" required>
                 </div>
-            </div>
-            <hr>
-            
-        </section>
-    </main>
 
-    <footer class="footer">
+                <div class="form-field">
+                    <label for="telefon">Telefon</label>
+                    <input type="tel" name="telefon" id="telefon">
+                </div>
 
-       <div class="footer__grid--column">
-           <div>
-               <a class="footer__link" href="#"><h2>KONTAKT</h2></a>
-           </div>
-           <div>
-               <span class="footer__title">Telefon:</span><br>
-               +420 123 456 789
-           </div>
-           <div>
-               <span class="footer__title">E-mail:</span><br>
-               <a class="footer__email" href="mailto:order@ogleather.cz">order@ogleather.cz</a>
-           </div>
-           <div class="footer__copyright">
-               &copy;2021, TP
-           </div>
+                <div class="form-field">
+                    <label for="zprava" class="required">Zpráva *</label>
+                    <textarea name="zprava" id="zprava" rows="6" required></textarea>
+                </div>
 
-       </div>
+                <button class="button" type="submit">Odeslat</button>
 
-   </footer>
+            </form>
 
-</body>
-</html>
+        </div>
+    </div>
+    <hr>
+    
+</section>
+   
