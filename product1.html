@@ -3,73 +3,73 @@ layout: sablona.njk
 title: Produkt1
 ---
 
-<div class="page">
-  
-    <div class="sp-loading"><img src="/images/sp-loading.gif" alt=""><br>LOADING IMAGES</div>
-    <div class="sp-wrap">
-        <a href="/images/cut/galerie32.jpg"><img src="/images/min/32.jpg" alt=""></a>
-        <a href="/images/cut/galerie06.jpg"><img src="/images/min/06.jpg" alt=""></a>
-        <a href="/images/cut/galerie07.jpg"><img src="/images/min/07.jpg" alt=""></a>
-        <a href="/images/cut/galerie31.jpg"><img src="/images/min/31.jpg" alt=""></a>
-        <a href="/images/cut/galerie05.jpg"><img src="/images/min/05.jpg" alt=""></a>
-        <a href="/images/cut/galerie01.jpg"><img src="/images/min/01.jpg" alt=""></a>
-        <a href="/images/cut/galerie10.jpg"><img src="/images/min/10.jpg" alt=""></a>
-        <a href="/images/cut/galerie04.jpg"><img src="/images/min/04.jpg" alt=""></a>
-        <a href="/images/cut/galerie17.jpg"><img src="/images/min/17.jpg" alt=""></a>
-        <a href="/images/cut/galerie24.jpg"><img src="/images/min/24.jpg" alt=""></a>
+    <div class="page">
+    
+        <div class="sp-loading"><img src="/images/sp-loading.gif" alt=""><br>LOADING IMAGES</div>
+        <div class="sp-wrap">
+            <a href="/images/cut/galerie32.jpg"><img src="/images/min/32.jpg" alt=""></a>
+            <a href="/images/cut/galerie06.jpg"><img src="/images/min/06.jpg" alt=""></a>
+            <a href="/images/cut/galerie07.jpg"><img src="/images/min/07.jpg" alt=""></a>
+            <a href="/images/cut/galerie31.jpg"><img src="/images/min/31.jpg" alt=""></a>
+            <a href="/images/cut/galerie05.jpg"><img src="/images/min/05.jpg" alt=""></a>
+            <a href="/images/cut/galerie01.jpg"><img src="/images/min/01.jpg" alt=""></a>
+            <a href="/images/cut/galerie10.jpg"><img src="/images/min/10.jpg" alt=""></a>
+            <a href="/images/cut/galerie04.jpg"><img src="/images/min/04.jpg" alt=""></a>
+            <a href="/images/cut/galerie17.jpg"><img src="/images/min/17.jpg" alt=""></a>
+            <a href="/images/cut/galerie24.jpg"><img src="/images/min/24.jpg" alt=""></a>
+        </div>
+
+        <div class="product__description">
+            <h2 class="product__description--title">DÁRKOVÝ SET S MONOGRAMY</h2>
+            <h3 class="product__description--subtitle">Krabička/ kapesník/ kožený pásek</h3>
+            <h2>1 990 Kč</h2>
+            <p> Každá položka v obchodě se vyrábí v malé české dílně. Nákupem v našem obchodě podpoříte skutečný český malý podnik. 
+                Naši výrobu nezadáváme a jsme hrdí na to, že jsme známí svou poctivou kvalitou.</p>
+            
+            <label for="product__name__choise">Barva pásků *</label>
+            <select name="product__name__choise" id="product__name__choise" autofocus required>
+                <option value="bezova">Přírodní kůže</option>
+                <option value="cerna">Černá</option>
+                <option value="hneda">Hnědá</option>
+                <option selected>Vyberte</option>
+            </select>
+
+            <label for="product__name__choise">Šířka pásků *</label>
+            <select name="product__name__choise" id="product__width__choise" autofocus required>
+                <option value="2.5">Šířka 2.5cm</option>
+                <option value="3.0">Šířka 3.0cm</option>
+                <option value="3.5">Šířka 3.5cm</option>
+                <option value="4.0">Šířka 4.0cm</option>
+                <option selected>Šířka pásků</option>
+            </select>
+
+            <label for="product__name__choise">Délka pásků *</label>
+            <input type="text" name="name" id="product__length"  size="50" autofocus required> 
+
+            <label for="monogram">Monogram * <span class="zprava">Správný tvar iniciálu je X. Y. </span></label>
+            <textarea name="monogram" id="zprava"  size="20" autofocus required cols="2" rows="1"> </textarea>
+            
+        </div>
+
+        <div class="order__form--contact">
+
+            <label for="name">Jméno a příjmení *</label>
+            <input type="text" name="name" id="name"  size="50" autofocus required> 
+        
+            <label for="email">E-mail *</label>
+            <input type="email" name="email" id="email"  size="50" autofocus required> 
+        
+            <label for="telefon">Telefon *</label>
+            <input type="tel" name="telefon" id="telefon"  size="50" autofocus required> 
+
+            <label for="address">Adresa *</label>
+            <textarea name="address" id="address"  size="30" autofocus required cols="10" rows="3"> </textarea>
+
+            
+        
+        </div>
+        <button class="button" type="submit">Odeslat</button>
     </div>
 
-    <div class="product__description">
-        <h2 class="product__description--title">DÁRKOVÝ SET S MONOGRAMY</h2>
-        <h3 class="product__description--subtitle">Krabička/ kapesník/ kožený pásek</h3>
-        <h2>1 990 Kč</h2>
-        <p> Každá položka v obchodě se vyrábí v malé české dílně. Nákupem v našem obchodě podpoříte skutečný český malý podnik. 
-            Naši výrobu nezadáváme a jsme hrdí na to, že jsme známí svou poctivou kvalitou.</p>
-        
-        <label for="product__name__choise">Barva pásků *</label>
-        <select name="product__name__choise" id="product__name__choise" autofocus required>
-            <option value="bezova">Přírodní kůže</option>
-            <option value="cerna">Černá</option>
-            <option value="hneda">Hnědá</option>
-            <option selected>Vyberte</option>
-        </select>
+        <hr>
 
-        <label for="product__name__choise">Šířka pásků *</label>
-        <select name="product__name__choise" id="product__width__choise" autofocus required>
-            <option value="2.5">Šířka 2.5cm</option>
-            <option value="3.0">Šířka 3.0cm</option>
-            <option value="3.5">Šířka 3.5cm</option>
-            <option value="4.0">Šířka 4.0cm</option>
-            <option selected>Šířka pásků</option>
-        </select>
-
-        <label for="product__name__choise">Délka pásků *</label>
-        <input type="text" name="name" id="product__length"  size="50" autofocus required> 
-
-        <label for="monogram">Monogram * <span class="zprava">Správný tvar iniciálu je X. Y. </span></label>
-        <textarea name="monogram" id="zprava"  size="20" autofocus required cols="2" rows="1"> </textarea>
-        
-    </div>
-
-    <div class="order__form--contact">
-
-        <label for="name">Jméno a příjmení *</label>
-        <input type="text" name="name" id="name"  size="50" autofocus required> 
-    
-        <label for="email">E-mail *</label>
-        <input type="email" name="email" id="email"  size="50" autofocus required> 
-    
-        <label for="telefon">Telefon *</label>
-        <input type="tel" name="telefon" id="telefon"  size="50" autofocus required> 
-
-        <label for="address">Adresa *</label>
-        <textarea name="address" id="address"  size="30" autofocus required cols="10" rows="3"> </textarea>
-
-        
-    
-    </div>
-    <button class="button" type="submit">Odeslat</button>
-</div>
-
-    <hr>
- 
